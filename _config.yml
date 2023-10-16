@@ -1,10 +1,8 @@
-title: Texture Theme
-author: GitHub User
-email: your-email@domain.com
+title: Huang Zi
+author: Huang Zi
+email: rayfilm@foxmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Welcome!
 show_excerpts: true # set to true to show excerpts on the homepage
 baseurl: /texture
 
@@ -15,8 +13,8 @@ sass:
 
 permalink: /posts/:title/
 texture:
-  title: Adam Denisov
-  tagline: Developer. Designer
+  title: Huang Zi
+  tagline: Student
   date_format: "%b %-d, %Y"
   style: black
   showNav: false
@@ -24,10 +22,11 @@ texture:
 
   # generate social links in footer
   social_links:
-    twitter: thelehhman
-    github:  thelehhman
-    linkedIn: in/thelehhman
-    rss: rss
+    CSDN: https://blog.csdn.net/weixin_43014010
+    # twitter: thelehhman
+    # github:  thelehhman
+    # linkedIn: in/thelehhman
+    # rss: rss
  
 
 # If you want to link only specific pages in your header, uncomment
