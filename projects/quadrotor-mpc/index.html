@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../favicon.png">
+    <title>Safe Planning & Control for Quadrotors | Zi Huang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Merriweather', serif; }
+        a.academic-link {
+            color: #2563eb;
+            text-decoration-line: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        a.academic-link:hover { border-bottom-color: #2563eb; }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+    <div class="max-w-3xl mx-auto px-6 py-12 lg:py-20">
+
+        <!-- Back Navigation -->
+        <nav class="mb-10">
+            <a href="../../index.html" class="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-blue-600 transition">
+                <i class="fas fa-arrow-left text-xs"></i> Back to Portfolio
+            </a>
+        </nav>
+
+        <!-- Project Header -->
+        <header class="mb-12">
+            <p class="text-sm uppercase tracking-widest text-gray-400 mb-2">Project</p>
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-snug">
+                Safe Planning &amp; Control for Quadrotors
+            </h1>
+            <p class="text-gray-500 text-sm mb-4">MPC + RRT*</p>
+            <!-- <a href="https://youtu.be/btgGNvN8GC0" target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 text-sm text-blue-600 hover:underline">
+                <i class="fab fa-youtube"></i> Watch on YouTube
+            </a> -->
+        </header>
+
+        <!-- Motivation -->
+        <section class="mb-12">
+            <h2 class="text-xl font-bold text-gray-900 border-b border-gray-200 pb-2 mb-4 uppercase tracking-wide text-sm">Motivation</h2>
+            <p class="leading-relaxed text-gray-700">
+                <!-- Describe why this project was undertaken. What problem does it solve? What gap in existing work does it address? -->
+                Drone delivery can be an attractive commercial oppturnity in urban arean, where the dron can deliver to the exact unit in a building. For drones navigate safely in the ciry, it is important to enforce both passive and active obstancle ovidance.
+
+                In this project, we implement informed RRT* for global path planning, which achieve collision free tentative path. And we use MPC as local path follower which activate planes to avoid collision to moving obstacle.
+            </p>
+
+
+            <figure class="mt-6">
+                <img src="images/pipeline.png" alt="System Pipeline" class="w-1/2 mx-auto rounded border border-gray-100 shadow-sm">
+                <figcaption class="text-center text-xs text-gray-400 mt-2">System Pipeline.</figcaption>
+            </figure>
+           
+        </section>
+
+        <!-- Challenge -->
+        <section class="mb-12">
+            <h2 class="text-xl font-bold text-gray-900 border-b border-gray-200 pb-2 mb-4 uppercase tracking-wide text-sm">Challenge</h2>
+            <p class="leading-relaxed text-gray-700">
+                <!-- Describe the key technical challenges encountered. What made this hard? -->
+                The challenge of this project is to use MPC for the direct dynamics control of the drone. Instead of treating this drone as a massed point, and rely on the low-level PID controller, we applied MPC directly to the lineralized dynamics of the drone, which enables optimal control for the drone pose.
+
+                We also introduced the linearlication of both static and dynamic 
+            </p>
+
+            <!-- Image placeholder:
+            <figure class="mt-6">
+                <img src="images/challenge.png" alt="Description" class="w-full rounded border border-gray-100 shadow-sm">
+                <figcaption class="text-center text-xs text-gray-400 mt-2">Caption.</figcaption>
+            </figure>
+            -->
+        </section>
+
+        <!-- Result -->
+        <section class="mb-12">
+            <h2 class="text-xl font-bold text-gray-900 border-b border-gray-200 pb-2 mb-4 uppercase tracking-wide text-sm">Result</h2>
+            <p class="leading-relaxed text-gray-700">
+                <!-- Describe the outcome. What was achieved? Include metrics, demos, or comparisons. -->
+                [Describe the results here.]
+            </p>
+
+            <!-- Image placeholder:
+            <figure class="mt-6">
+                <img src="images/result.png" alt="Description" class="w-full rounded border border-gray-100 shadow-sm">
+                <figcaption class="text-center text-xs text-gray-400 mt-2">Caption.</figcaption>
+            </figure>
+            -->
+
+            <div class="mt-6">
+                <a href="https://youtu.be/btgGNvN8GC0" target="_blank" rel="noopener"
+                   class="inline-flex items-center gap-2 text-sm text-blue-600 hover:underline">
+                    <i class="fab fa-youtube"></i> Watch the demo on YouTube &rarr;
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-400 text-sm mt-20 pb-8 border-t border-gray-100 pt-8">
+            <a href="../../index.html" class="hover:text-blue-600 transition">&larr; Back to Portfolio</a>
+        </footer>
+
+    </div>
+
+</body>
+</html>

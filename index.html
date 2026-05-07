@@ -41,10 +41,10 @@
         <header class="flex flex-col md:flex-row gap-8 items-start mb-16">
             <!-- Profile Photo Placeholder -->
             <div class="w-32 h-32 md:w-40 md:h-40 flex-shrink-0 bg-gray-200 rounded-full overflow-hidden border border-gray-100 shadow-sm">
-                <!-- REPLACE WITH YOUR PHOTO: <img src="your-photo.jpg" alt="Your Name" class="w-full h-full object-cover"> -->
-                <div class="w-full h-full flex items-center justify-center text-gray-400 text-4xl">
+                <img src="pic_400.webp" alt="Zi Huang" class="w-full h-full object-cover">
+                <!-- <div class="w-full h-full flex items-center justify-center text-gray-400 text-4xl">
                     <i class="fas fa-user"></i>
-                </div>
+                </div> -->
             </div>
 
             <!-- Intro Text -->
@@ -52,7 +52,7 @@
                 <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Zi Huang</h1>
                 <p class="text-lg text-gray-600 mb-4 font-light">
                     MSc student in Robotics at Delft University of Technology <br>
-                    Aspiring PhD Student in Robotics/ System and Control
+                    Aspiring PhD Student in Robotics/ MachineLearning/ System and Control
                 </p>
                 
                 <!-- Social / Contact Links -->
@@ -83,10 +83,10 @@
         <section class="mb-12">
             <h2 class="text-xl font-bold text-gray-900 border-b border-gray-200 pb-2 mb-4 uppercase tracking-wide text-sm">About Me</h2>
             <p class="mb-4 leading-relaxed">
-                I am currently a second year master student majoring in Robotics at Delft University of Technology. My research interests lie at the intersection of <strong>Reinforcement Learning</strong> and <strong>Neuromorphic Computing</strong>. I am particularly interested in exploring how bio-inspired algorithms can be applied to bio-inspired robots.
+                I am currently a second year master student majoring in Robotics at Delft University of Technology. My research interests lie at the intersection of <strong>Machine Learning</strong> and <strong>Robotics</strong> (Robot Learning), specifically Reinforcement Learning and imitation learning.
             </p>
             <p class="leading-relaxed">
-                Currently, I am working with <a href="https://cosimodellasantina.eu/" class="academic-link">Dr.Cosimo Della Santina</a> on Bio-inspired Control for Soft Snake Robots, where we are investigating the combination of bio-inspired STDP learning, reservoir computing, and Reinforcement Learning for snake locomotion. I am applying for PhD positions starting in Fall 2026.
+                Currently, I am working with <a href="https://cosimodellasantina.eu/" class="academic-link">Dr.Cosimo Della Santina</a> on Self-Adaptive Reservoir for Reinforcement Learning, where we combines Reservoir computing with RL for better sample efficiency. I am applying for PhD positions starting in Fall 2026.
             </p>
         </section>
 
@@ -132,27 +132,27 @@
             <h2 class="text-xl font-bold text-gray-900 border-b border-gray-200 pb-2 mb-4 uppercase tracking-wide text-sm">Selected Projects</h2>
             
             <div class="grid md:grid-cols-2 gap-6">
-                <div class="border border-gray-200 p-4 rounded bg-gray-50">
-                    <h3 class="font-bold text-gray-800 mb-2">Safe Planning & Control for Quadrotors (MPC + RRT*)</h3>
+                <a href="projects/quadrotor-mpc/index.html" class="block border border-gray-200 p-4 rounded bg-gray-50 hover:border-blue-300 hover:shadow-sm transition group">
+                    <h3 class="font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition">Safe Planning & Control for Quadrotors (MPC + RRT*)</h3>
                     <p class="text-sm text-gray-600 mb-3">
                         Developed a hybrid planning architecture combining sampling-based search with optimization-based control.
                     </p>
-                    <a href="https://youtu.be/btgGNvN8GC0" class="text-sm text-blue-600 hover:underline">View on Youtube &rarr;</a>
-                </div>
+                    <span class="text-sm text-blue-600">View project &rarr;</span>
+                </a>
 
-                <div class="border border-gray-200 p-4 rounded bg-gray-50">
-                    <h3 class="font-bold text-gray-800 mb-2">Apple Harvesting Robot Manipulation</h3>
+                <a href="projects/apple-harvesting/index.html" class="block border border-gray-200 p-4 rounded bg-gray-50 hover:border-blue-300 hover:shadow-sm transition group">
+                    <h3 class="font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition">Apple Harvesting Robot Manipulation</h3>
                     <p class="text-sm text-gray-600 mb-3">
                         Implemented a ROS2/MoveIt motion planning pipeline for a 4-DOF arm to execute inverse kinematics and pick-and-place tasks.
                     </p>
-                    <a href="https://youtu.be/dJFtMQb1bO0" class="text-sm text-blue-600 hover:underline">View on Youtube &rarr;</a>
-                </div>
+                    <span class="text-sm text-blue-600">View project &rarr;</span>
+                </a>
             </div>
         </section>
 
         <!-- Footer -->
         <footer class="text-center text-gray-400 text-sm mt-20 pb-8">
-            <p>&copy; 2025 Zi Huang. Last updated: December 2025.</p>
+            <p>&copy; 2025-2026 Zi Huang. Last updated: May 2026.</p>
         </footer>
 
     </div>
